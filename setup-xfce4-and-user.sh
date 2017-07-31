@@ -1,4 +1,4 @@
-# This scripts installs xfce4 and xrdp. It also creates a new user 'developper' with a password 'secret'
+# This scripts installs xfce4. It also creates a new user 'developper' with a password 'secret'
 
 apt-get update
 apt-get install -y xfce4
@@ -8,5 +8,10 @@ apt-get update
 adduser --gecos --disabled-password developper
 echo 'developper:secret' | chpasswd
 sudo adduser developper sudo
+
+sudo chmod a+w /home/developper
+sudo echo xfce4-session > /home/developper/.xsession
+
+
 
 

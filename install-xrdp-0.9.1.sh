@@ -48,3 +48,6 @@ sudo sed -i.bak 's/sbin\/xrdp/local\/sbin\/xrdp/g' /lib/systemd/system/xrdp-sesm
 #Issue systemctl command to reflect change and enable the service
 sudo systemctl daemon-reload
 sudo systemctl enable xrdp.service
+
+# Remove libxfont1-dev package because it my cause issue with installation of other package
+sudo apt-get remove -y xserver-xorg-dev libxfont1-dev
