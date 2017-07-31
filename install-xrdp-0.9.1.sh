@@ -1,6 +1,6 @@
 # From: https://github.com/neutrinolabs/xrdp/wiki/Building-on-Debian-8
 
-sudo apt-get install git autoconf libtool pkg-config gcc g++ make libssl-dev libpam0g-dev libjpeg-dev libx11-dev libxfixes-dev libxrandr-dev flex bison libxml2-dev intltool xsltproc xutils-dev python-libxml2 g++ xutils libfuse-dev libmp3lame-dev nasm libpixman-1-dev xserver-xorg-dev
+sudo apt-get install -y git autoconf libtool pkg-config gcc g++ make libssl-dev libpam0g-dev libjpeg-dev libx11-dev libxfixes-dev libxrandr-dev flex bison libxml2-dev intltool xsltproc xutils-dev python-libxml2 g++ xutils libfuse-dev libmp3lame-dev nasm libpixman-1-dev xserver-xorg-dev libxfont1-dev
 
 # Sources for xrdp and xorgxrdp Get sources from the release page, or clone xrdp and xorgxrdp repository from GitHub if you need the devel branch:
 

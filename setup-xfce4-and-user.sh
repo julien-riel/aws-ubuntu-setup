@@ -9,11 +9,4 @@ adduser --gecos --disabled-password developper
 echo 'developper:secret' | chpasswd
 sudo adduser developper sudo
 
-apt-get install -y xrdp
-
-echo xfce4-session > /home/developper/.xession
-
-sed -i 's/. \/etc\/X11\/Xsession/startxfce4/' /etc/xrdp/startwm.sh
-
-service xrdp restart
 
